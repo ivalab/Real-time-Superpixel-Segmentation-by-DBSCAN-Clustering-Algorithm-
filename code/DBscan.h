@@ -148,7 +148,8 @@ void DBscan( unsigned char* R, unsigned char* G, unsigned char* B,int Rows,int C
     
     int **ngbC; //record detail pixel in each superpixel 
     ngbC=new int*[pixel];
-    int *neighbours=new int[supnumber*2];
+    int tmp_int = supnumber*2;
+    int *neighbours=new int[tmp_int];
     for(int i=0;i<supnumber*2;i++)neighbours[i]=0;
     int numbngb;
      
